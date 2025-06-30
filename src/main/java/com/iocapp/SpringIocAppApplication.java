@@ -40,6 +40,7 @@ public class SpringIocAppApplication {
 		System.out.println("---------------------------------------------------");
 		Junction junction = (Junction)ac.getBean("Junction");
 		junction.executeTask();
+	    
 		
 	
 	}

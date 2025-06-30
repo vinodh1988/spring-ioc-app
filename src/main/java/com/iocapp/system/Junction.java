@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Junction {
   @Autowired
+  //@Qualifier("analysis")
   private ProjectTask projectTask;
   
   public void executeTask() {
