@@ -16,7 +16,27 @@ public class SpringIocAppApplication {
 		
 		Activity activity = (Activity)ac.getBean("coding");
 		activity.perform();
+		Activity activity2 = (Activity)ac.getBean("coding");
+		activity2.perform();
+		Activity activity3 = (Activity)ac.getBean("coding");
+		activity3.perform();
+		
+		Activity d1 = (Activity)ac.getBean("documenting");
+		d1.perform();
+		Activity d2 = (Activity)ac.getBean("documenting");
+		d2.perform();
+		Activity d3 = (Activity)ac.getBean("documenting");
+		d3.perform();
+		
+		System.out.println("Hash code of activity: " + activity.hashCode());
+		System.out.println("Hash code of activity2: " + activity2.hashCode());
+		System.out.println("Hash code of activity3: " + activity3.hashCode());
+		System.out.println("Hash code of d1: " + d1.hashCode());
+		System.out.println("Hash code of d2: " + d2.hashCode());
+		System.out.println("Hash code of d3: " + d3.hashCode());
+	
 	}
+	
 
 }
  
