@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Scope;
 import com.iocapp.system.Activity;
 import com.iocapp.system.Coding;
 import com.iocapp.system.Documenting;
+import com.iocapp.system.Junction;
 
 @Configuration
 public class ConfigApp {
@@ -24,6 +25,11 @@ public class ConfigApp {
 	@Scope("prototype") // This ensures a new instance is created each time
 	public Activity documentingActivity() {
 		return new Documenting();
+	}
+	
+	@Bean(name="Junction")
+	public Junction junction() {
+		return new Junction();
 	}
 	
 }

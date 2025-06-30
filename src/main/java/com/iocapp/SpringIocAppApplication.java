@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import com.iocapp.system.Activity;
+import com.iocapp.system.Junction;
 
 @SpringBootApplication
 public class SpringIocAppApplication {
@@ -34,6 +35,12 @@ public class SpringIocAppApplication {
 		System.out.println("Hash code of d1: " + d1.hashCode());
 		System.out.println("Hash code of d2: " + d2.hashCode());
 		System.out.println("Hash code of d3: " + d3.hashCode());
+		
+		
+		System.out.println("---------------------------------------------------");
+		Junction junction = (Junction)ac.getBean("Junction");
+		junction.executeTask();
+		
 	
 	}
 	
